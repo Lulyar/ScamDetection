@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ScamDetect AI - Platform deteksi SMS penipuan berbasis AI dengan teknologi NLP terdepan">
+    <title>ScamDetect AI - Deteksi SMS Penipuan</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Overlay Pemuatan -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-logo">🛡️</div>
+            <div class="loading-text">ScamDetect AI</div>
+            <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar" id="navbar">
+        <div class="navbar-logo">🛡️ ScamDetect AI</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-menu" id="navbar-menu">
+            <a href="#beranda" class="navbar-link">Beranda</a>
+            <a href="#tentang" class="navbar-link">Tentang</a>
+            <a href="#teknologi" class="navbar-link">Teknologi</a>
+            <a href="#carakerja" class="navbar-link">Cara Kerja</a>
+            <a href="#demo" class="navbar-btn">Coba</a>
+        </div>
+    </div>
+
+    <!-- Bagian Hero -->
+    <div class="hero-section scroll-reveal" id="beranda">
+        <div class="hero-container">
+            <div class="hero-row">
+                <div class="hero-text">
+                    <div class="hero-badge"> Diagnosis Berbasis AI</div>
+                    <h1 class="hero-title">
+                        Deteksi <span class="hero-title-gradient">SMS Penipuan</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Manfaatkan teknologi Natural Language Processing (NLP) canggih untuk menganalisis
+                        isi pesan SMS dan mengidentifikasi indikasi penipuan, scam, atau promosi secara
+                        otomatis dengan akurasi tinggi.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn-primary">Coba Demo</a>
+                        <a href="#teknologi" class="btn-secondary">Pelajari Lebih Lanjut</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">95%+</div>
+                            <div class="hero-stat-label">Tingkat Akurasi</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">1143</div>
+                            <div class="hero-stat-label">Dataset SMS</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value">&lt;2 Detik</div>
+                            <div class="hero-stat-label">Waktu Analisis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/static/gambar_scam.png" alt="ScamDetect AI Illustration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Fitur -->
+    <div class="section scroll-reveal" id="tentang">
+        <h2 class="section-title">Keunggulan <span class="section-title-gradient">ScamDetect AI</span></h2>
+        <p class="section-subtitle">
+            Platform deteksi SMS penipuan berbasis AI dengan teknologi NLP terdepan
+        </p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Analisis Instan</h3>
+                <p class="feature-desc">
+                    Dapatkan hasil dalam hitungan detik. Model kami yang dioptimalkan memberikan
+                    prediksi cepat dan akurat tanpa mengorbankan kualitas.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Akurasi Tinggi</h3>
+                <p class="feature-desc">
+                    Dilatih pada dataset yang kaya dengan teknik augmentasi data untuk mencapai
+                    akurasi klasifikasi yang luar biasa.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Deteksi Multi-Tahap</h3>
+                <p class="feature-desc">
+                    Mendiagnosis tiga kelas berbeda: SMS Normal, SMS Promo, dan SMS Penipuan
+                    untuk penilaian yang komprehensif.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-title">Skor Kepercayaan</h3>
+                <p class="feature-desc">
+                    Menampilkan probabilitas detail untuk setiap klasifikasi, memungkinkan
+                    keputusan yang terinformasi.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3 class="feature-title">Aman &amp; Privat</h3>
+                <p class="feature-desc">
+                    Data SMS Anda diproses dengan aman dan tidak pernah disimpan secara permanen.
+                    Privasi adalah prioritas utama kami.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3 class="feature-title">Akses Web</h3>
+                <p class="feature-desc">
+                    Akses dari perangkat apa pun melalui browser. Tidak perlu instalasi,
+                    langsung gunakan kapan saja.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Teknologi -->
+    <div class="section scroll-reveal" id="teknologi">
+        <h2 class="section-title">Teknologi <span class="section-title-gradient">di Balik Sistem</span></h2>
+        <p class="section-subtitle">
+            Pipeline NLP modern untuk menghasilkan deteksi yang cepat dan andal
+        </p>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <div class="tech-icon">🔧</div>
+                <h3 class="tech-title">Text Preprocessing</h3>
+                <p class="tech-desc">
+                    Case folding, normalisasi kata, stopword removal, dan stemming Bahasa Indonesia
+                    untuk menghasilkan teks yang bersih.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">📝</div>
+                <h3 class="tech-title">Feature Extraction</h3>
+                <p class="tech-desc">
+                    Representasi teks menggunakan TF-IDF untuk mengidentifikasi kata-kata paling
+                    informatif dari corpus SMS.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🎛️</div>
+                <h3 class="tech-title">Feature Selection</h3>
+                <p class="tech-desc">
+                    Seleksi fitur menggunakan Chi-Square untuk memilih ribuan fitur terbaik
+                    dari 3445 fitur awal.
+                </p>
+            </div>
+            <div class="tech-card">
+                <div class="tech-icon">🤖</div>
+                <h3 class="tech-title">Classification</h3>
+                <p class="tech-desc">
+                    Algoritma Multinomial Naive Bayes yang ringan dan cepat, cocok untuk
+                    prediksi real-time pada pesan yang masuk.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Alur Kerja -->
+    <div class="section scroll-reveal" id="carakerja">
+        <h2 class="section-title">Alur Kerja <span class="section-title-gradient">Model</span></h2>
+        <p class="section-subtitle">
+            Proses analisis SMS dari input hingga hasil klasifikasi
+        </p>
+        <div class="workflow-container">
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">📱</div>
+                        <div class="workflow-title">Input SMS</div>
+                        <div class="workflow-desc">Teks mentah</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">🔧</div>
+                        <div class="workflow-title">Preprocessing</div>
+                        <div class="workflow-desc">Normalisasi</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">📝</div>
+                        <div class="workflow-title">TF-IDF</div>
+                        <div class="workflow-desc">Ekstraksi Fitur</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">🎛️</div>
+                        <div class="workflow-title">Chi-Square</div>
+                        <div class="workflow-desc">Seleksi Fitur</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">🤖</div>
+                        <div class="workflow-title">Classification</div>
+                        <div class="workflow-desc">Naive Bayes</div>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="workflow-step-box">
+                        <div class="workflow-icon">✅</div>
+                        <div class="workflow-title">Hasil</div>
+                        <div class="workflow-desc">Akurasi Tinggi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bagian Demo -->
+    <div class="demo-section scroll-reveal" id="demo">
+        <div class="demo-card">
+            <h2 class="demo-title">Coba Deteksi SMS</h2>
+            <p class="demo-subtitle">
+                Tempelkan teks SMS yang Anda terima dan dapatkan analisis otomatis berbasis AI
+            </p>
+            <div class="input-container">
+                <textarea
+                    id="sms-input"
+                    class="custom-textarea"
+                    placeholder="Contoh: Selamat! Anda mendapatkan hadiah undian. Kirimkan kode OTP Anda sekarang untuk klaim hadiah..."
+                    rows="6"
+                ></textarea>
+                <button
+                    type="button"
+                    id="analyze-btn"
+                    class="custom-button"
+                >
+                    🔍 Analisis Pesan
+                </button>
+            </div>
+            <div id="result-container"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">🛡️ ScamDetect AI</div>
+                    <p class="footer-desc">Platform deteksi SMS penipuan berbasis AI dengan teknologi NLP terdepan untuk melindungi Anda dari ancaman digital.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4 class="footer-nav-title">Navigasi</h4>
+                    <a href="#beranda" class="footer-link">Beranda</a>
+                    <a href="#tentang" class="footer-link">Tentang</a>
+                    <a href="#teknologi" class="footer-link">Teknologi</a>
+                    <a href="#carakerja" class="footer-link">Cara Kerja</a>
+                    <a href="#demo" class="footer-link">Demo</a>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-nav-title">Follow Me</h4>
+                    <div class="footer-social-links">
+                        <a href="https://www.instagram.com/luly_agrmdhn" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://github.com/Lulyar" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luly-angga-ramadhan-b558aa355" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ScamDetect AI — Luly Angga Ramadhan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
