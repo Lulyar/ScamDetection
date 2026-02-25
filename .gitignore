@@ -60,9 +60,9 @@ desktop.ini
 *.bak
 
 # ---------------------------------------------------------------------------
-# Model & Dataset Besar (opsional, uncomment jika perlu)
+# Model & Dataset (tidak ikut saat clone, hanya frontend)
 # ---------------------------------------------------------------------------
-# *.sav
-# *.pkl
-# *.h5
-# *.csv
+*.sav
+*.pkl
+*.h5
+*.csv
