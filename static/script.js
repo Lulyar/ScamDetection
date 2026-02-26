@@ -8,7 +8,7 @@ function submitForm() {
     if (!text) {
         resultContainer.innerHTML = `
             <div class="result-card">
-                <div class="result-icon">⚠️</div>
+                <div class="result-icon"><iconify-icon icon="mdi:alert-circle-outline" width="48" height="48" style="color: #f59e0b"></iconify-icon></div>
                 <div class="result-title">Input Kosong</div>
                 <div class="result-desc">Silakan masukkan teks SMS terlebih dahulu.</div>
             </div>
@@ -18,7 +18,7 @@ function submitForm() {
 
     // Tampilkan status memuat
     analyzeBtn.disabled = true;
-    analyzeBtn.textContent = '⏳ Menganalisis...';
+    analyzeBtn.innerHTML = '<iconify-icon icon="mdi:timer-sand" width="20" height="20"></iconify-icon> Menganalisis...';
     resultContainer.innerHTML = `
         <div class="loading-spinner">
             <div class="spinner"></div>
@@ -54,7 +54,7 @@ function submitForm() {
     })
     .finally(() => {
         analyzeBtn.disabled = false;
-        analyzeBtn.textContent = '🔍 Analisis Pesan';
+        analyzeBtn.innerHTML = '<iconify-icon icon="mdi:magnify" width="20" height="20"></iconify-icon> Analisis Pesan';
     });
 
     return false;

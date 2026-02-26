@@ -60,7 +60,7 @@ desktop.ini
 *.bak
 
 # ---------------------------------------------------------------------------
-# Model & Dataset (tidak ikut saat clone, hanya frontend)
+# dataset ini ga ke clone
 # ---------------------------------------------------------------------------
 *.sav
 *.pkl
