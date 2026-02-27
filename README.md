@@ -19,6 +19,18 @@ ScamDetect AI menganalisis isi pesan SMS dan mengklasifikasikannya ke dalam tiga
 - **Antarmuka Modern** — Desain responsif yang bisa diakses dari perangkat apa pun
 - **Privasi Terjaga** — Data SMS tidak disimpan secara permanen
 
+## 📸 Tampilan Aplikasi
+
+![Tampilan 1](assest/1.png)
+
+![Tampilan 2](assest/2.png)
+
+![Tampilan 3](assest/3.png)
+
+![Tampilan 4](assest/4.png)
+
+![Tampilan 5](assest/5.png)
+
 ## 🛠️ Teknologi yang Digunakan
 
 ### Backend
