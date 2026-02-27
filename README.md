@@ -1,8 +1,8 @@
-# 🛡️ ScamDetect AI — Deteksi SMS Penipuan Berbasis AI
+#  ScamDetect AI — Deteksi SMS Penipuan Berbasis AI
 
 Platform web untuk mendeteksi SMS penipuan (scam), promosi, dan pesan normal secara otomatis menggunakan teknologi **Natural Language Processing (NLP)** dan algoritma **Multinomial Naive Bayes**.
 
-## 📋 Deskripsi
+##  Deskripsi
 
 ScamDetect AI menganalisis isi pesan SMS dan mengklasifikasikannya ke dalam tiga kategori:
 
@@ -12,14 +12,14 @@ ScamDetect AI menganalisis isi pesan SMS dan mengklasifikasikannya ke dalam tiga
 | 1 | **Pesan Penipuan/Scam** | Berpotensi penipuan — jangan balas, klik tautan, atau bagikan OTP |
 | 2 | **Pesan Promo** | Terdeteksi sebagai promosi — pastikan dari pengirim resmi |
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
 - **Analisis Instan** — Hasil prediksi dalam hitungan detik
 - **Akurasi Tinggi** — Dilatih pada 1.143 dataset SMS Bahasa Indonesia
 - **Antarmuka Modern** — Desain responsif yang bisa diakses dari perangkat apa pun
 - **Privasi Terjaga** — Data SMS tidak disimpan secara permanen
 
-## 📸 Tampilan Aplikasi
+##  Tampilan Aplikasi
 
 ![Tampilan 1](assest/1.png)
 
@@ -31,7 +31,7 @@ ScamDetect AI menganalisis isi pesan SMS dan mengklasifikasikannya ke dalam tiga
 
 ![Tampilan 5](assest/5.png)
 
-## 🛠️ Teknologi yang Digunakan
+##  Teknologi yang Digunakan
 
 ### Backend
 - **Python 3** & **Flask** — Web framework
@@ -45,7 +45,7 @@ ScamDetect AI menganalisis isi pesan SMS dan mengklasifikasikannya ke dalam tiga
 - **Google Fonts (Inter)** — Tipografi modern
 - **Iconify** — Ikon vektor
 
-## 🔄 Alur Kerja Model
+##  Alur Kerja Model
 
 ```
 Input SMS → Preprocessing → TF-IDF → Chi-Square → Naive Bayes → Hasil Klasifikasi
@@ -57,7 +57,7 @@ Input SMS → Preprocessing → TF-IDF → Chi-Square → Naive Bayes → Hasil 
 3. **Stopword Removal** — Menghapus kata-kata yang tidak informatif
 4. **Stemming** — Mengubah kata ke bentuk dasar menggunakan Sastrawi
 
-## 🚀 Cara Menjalankan
+##  Cara Menjalankan
 
 ### 1. Clone Repository
 
@@ -95,7 +95,7 @@ python app.py
 
 Aplikasi akan berjalan di `http://localhost:5000`
 
-## 📁 Struktur Proyek
+##  Struktur Proyek
 
 ```
 ScamDetection/
@@ -119,14 +119,7 @@ ScamDetection/
 
 > **Catatan:** File `.sav`, `.pkl`, `.h5`, dan `.csv` tidak disertakan di repository karena ukurannya yang besar. Jalankan notebook `nlp.ipynb` untuk membuat ulang model dan dataset.
 
-## 👤 Pengembang
-
-**Luly Angga Ramadhan**
-
 - GitHub: [@Lulyar](https://github.com/Lulyar)
 - Instagram: [@luly_agrmdhn](https://www.instagram.com/luly_agrmdhn)
 - LinkedIn: [Luly Angga Ramadhan](https://www.linkedin.com/in/luly-angga-ramadhan-b558aa355)
 
-## 📄 Lisensi
-
-© 2026 ScamDetect AI — Luly Angga Ramadhan. All rights reserved.
